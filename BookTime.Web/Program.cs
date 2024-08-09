@@ -1,10 +1,12 @@
+using BookTime.Shared.Interfaces;
 using BookTime.Web.Components;
 using BookTime.Web.Data;
+using BookTime.Web.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<BookContext>(options =>
+builder.Services.AddDbContextFactory<BookContext>(options =>
 {
     var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
     options.UseSqlServer(connectionString);
@@ -12,6 +14,8 @@ builder.Services.AddDbContext<BookContext>(options =>
 
 // Add services to the container.
 builder.Services.AddRazorComponents();
+
+builder.Services.AddTransient<IBookService, BookService>();
 
 var app = builder.Build();
 
