@@ -1,0 +1,21 @@
+Id,Title,AuthorId,Description,NumPages,Image
+1,Dune,1,A classic sci-fi novel.,528,https://example.com/dune.jpg
+2,Harry Potter and the Sorcerer's Stone,2,A magical adventure.,306,https://example.com/harry-potter.jpg
+3,The Shining,3,A horror classic.,447,https://example.com/the-shining.jpg
+4,1984,4,A dystopian novel.,328,https://example.com/1984.jpg
+5,Brave New World,5,A satirical novel.,312,https://example.com/brave-new-world.jpg
+6,Fahrenheit 451,6,A dystopian novel.,256,https://example.com/fahrenheit-451.jpg
+7,The Handmaid's Tale,7,A dystopian novel.,310,https://example.com/the-handmaids-tale.jpg
+8,The Left Hand of Darkness,8,A science fiction novel.,296,https://example.com/the-left-hand-of-darkness.jpg
+9,2001: A Space Odyssey,9,A science fiction novel.,304,https://example.com/2001-a-space-odyssey.jpg
+10,Foundation,10,A science fiction novel.,464,https://example.com/foundation.jpg
+11,Stranger in a Strange Land,11,A science fiction novel.,392,https://example.com/stranger-in-a-strange-land.jpg
+12,Ender's Game,12,A science fiction novel.,352,https://example.com/enders-game.jpg
+13,Do Androids Dream of Electric Sheep?,13,A science fiction novel.,224,https://example.com/do-androids-dream-of-electric-sheep.jpg
+14,Kafka on the Shore,14,A magical realism novel.,464,https://example.com/kafka-on-the-shore.jpg
+15,One Hundred Years of Solitude,15,A magical realism novel.,428,https://example.com/one-hundred-years-of-solitude.jpg
+16,Beloved,16,A historical fiction novel.,320,https://example.com/beloved.jpg
+17,Kindred,17,A science fiction novel.,256,https://example.com/kindred.jpg
+18,I Know Why the Caged Bird Sings,18,A memoir.,272,https://example.com/i-know-why-the-caged-bird-sings.jpg
+19,American Gods,19,A fantasy novel.,466,https://example.com/american-gods.jpg
+20,Discworld,20,A fantasy novel.,384,https://example.com/discworld.jpg
