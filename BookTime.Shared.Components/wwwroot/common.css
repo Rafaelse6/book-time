@@ -1,3 +1,32 @@
+:root {
+    --color-main: #2E8B57; /* Verde Escuro */
+    --color-main-light: #4DAE73; /* Verde Musgo Claro */
+    --color-main-dark: #1F5B3A; /* Verde Musgo Escuro */
+    --color-very-light-gray: #E0E0E0; /* Cinza Claro */
+    --color-light-black: #3C3C3C; /* Cinza Escuro */
+}
+
 html, body, * {
-    font-family: "Inter", sans-serif;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body {
+    background-color: #f0f5fb;
+}
+
+.bg-main {
+    background-color: var(--color-main);
+}
+
+.bg-main-light {
+    background-color: var(--color-main-light);
+}
+
+.bg-main-dark {
+    background-color: var(--color-main-dark);
+}
+
+
+.text-main {
+    color: var(--color-main);
 }
