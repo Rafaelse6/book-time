@@ -33,8 +33,8 @@ namespace Test.Entities
             genreBook.Book = book;
 
             genre.GenreBooks.Add(genreBook);
-            genre.GenreBooks.Add(genreBook);
-           
+            book.BooksGenres.Add(genreBook);
+
             // Assert
             Assert.AreEqual(1, genre.GenreBooks.Count);
             Assert.AreEqual(1, book.BooksGenres.Count);
