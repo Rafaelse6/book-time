@@ -1,0 +1,21 @@
+﻿Id,Name,Slug,WasRead
+1,Science Fiction,science-fiction,False
+2,Fantasy,fantasy,False
+3,Mystery,mystery,True
+4,Horror,horror,False
+5,Romance,romance,False
+6,Thriller,thriller,False
+7,Dystopian,dystopian,False
+8,Historical Fiction,historical-fiction,False
+9,Contemporary,contemporary,False
+10,Young Adult,young-adult,False
+11,Nonfiction,nonfiction,False
+12,Biography,biography,False
+13,Autobiography,autobiography,False
+14,Memoir,memoir,False
+15,Self-Help,self-help,False
+16,Cookbooks,cookbooks,False
+17,Travel,travel,False
+18,Science,science,False
+19,History,history,False
+20,Philosophy,philosophy,False
