@@ -3,6 +3,7 @@ using BookTime.Web.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookTime.Web.Migrations
 {
     [DbContext(typeof(BookContext))]
-    partial class BookContextModelSnapshot : ModelSnapshot
+    [Migration("20240818160628_UpdatingBooksCovers")]
+    partial class UpdatingBooksCovers
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -209,7 +212,7 @@ namespace BookTime.Web.Migrations
                             Id = 1,
                             AuthorId = 1,
                             Description = "A classic sci-fi novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/dune.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/dune.jpg",
                             NumPages = 528,
                             Title = "Dune"
                         },
@@ -218,7 +221,7 @@ namespace BookTime.Web.Migrations
                             Id = 2,
                             AuthorId = 2,
                             Description = "A magical adventure.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/harry-potter.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/harry-potter.jpg",
                             NumPages = 306,
                             Title = "Harry Potter and the Sorcerer's Stone"
                         },
@@ -227,7 +230,7 @@ namespace BookTime.Web.Migrations
                             Id = 3,
                             AuthorId = 3,
                             Description = "A horror classic.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/the-shining.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/the-shining.jpg",
                             NumPages = 447,
                             Title = "The Shining"
                         },
@@ -236,7 +239,7 @@ namespace BookTime.Web.Migrations
                             Id = 4,
                             AuthorId = 4,
                             Description = "A dystopian novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/1984.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/1984.jpg",
                             NumPages = 328,
                             Title = "1984"
                         },
@@ -245,7 +248,7 @@ namespace BookTime.Web.Migrations
                             Id = 5,
                             AuthorId = 5,
                             Description = "A satirical novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/brave-new-world.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/brave-new-world.jpg",
                             NumPages = 312,
                             Title = "Brave New World"
                         },
@@ -254,7 +257,7 @@ namespace BookTime.Web.Migrations
                             Id = 6,
                             AuthorId = 6,
                             Description = "A dystopian novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/fahrenheit.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/fahrenheit.jpg",
                             NumPages = 256,
                             Title = "Fahrenheit 451"
                         },
@@ -263,7 +266,7 @@ namespace BookTime.Web.Migrations
                             Id = 7,
                             AuthorId = 7,
                             Description = "A dystopian novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/the-handmaids-tale.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/the-handmaids-tale.jpg",
                             NumPages = 310,
                             Title = "The Handmaid's Tale"
                         },
@@ -272,7 +275,7 @@ namespace BookTime.Web.Migrations
                             Id = 8,
                             AuthorId = 8,
                             Description = "A science fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/the-left-hand-of-darkness.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/the-left-hand-of-darkness.jpg",
                             NumPages = 296,
                             Title = "The Left Hand of Darkness"
                         },
@@ -281,7 +284,7 @@ namespace BookTime.Web.Migrations
                             Id = 9,
                             AuthorId = 9,
                             Description = "A science fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/2001.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/2001.jpg",
                             NumPages = 304,
                             Title = "2001: A Space Odyssey"
                         },
@@ -290,7 +293,7 @@ namespace BookTime.Web.Migrations
                             Id = 10,
                             AuthorId = 10,
                             Description = "A science fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/foundation.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/foundation.jpg",
                             NumPages = 464,
                             Title = "Foundation"
                         },
@@ -299,7 +302,7 @@ namespace BookTime.Web.Migrations
                             Id = 11,
                             AuthorId = 11,
                             Description = "A science fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/stranger-in-a-strange-land.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/stranger-in-a-strange-land.jpg",
                             NumPages = 392,
                             Title = "Stranger in a Strange Land"
                         },
@@ -308,7 +311,7 @@ namespace BookTime.Web.Migrations
                             Id = 12,
                             AuthorId = 12,
                             Description = "A science fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/enders-game.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/enders-game.jpg",
                             NumPages = 352,
                             Title = "Ender's Game"
                         },
@@ -317,7 +320,7 @@ namespace BookTime.Web.Migrations
                             Id = 13,
                             AuthorId = 13,
                             Description = "A science fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/do-androids-dream.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/do-androids-dream.jpg",
                             NumPages = 224,
                             Title = "Do Androids Dream of Electric Sheep?"
                         },
@@ -326,7 +329,7 @@ namespace BookTime.Web.Migrations
                             Id = 14,
                             AuthorId = 14,
                             Description = "A magical realism novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/kafka-on-the-shore.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/kafka-on-the-shore.jpg",
                             NumPages = 464,
                             Title = "Kafka on the Shore"
                         },
@@ -335,7 +338,7 @@ namespace BookTime.Web.Migrations
                             Id = 15,
                             AuthorId = 15,
                             Description = "A magical realism novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/one-hundred-years.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/one-hundred-years.jpg",
                             NumPages = 428,
                             Title = "One Hundred Years of Solitude"
                         },
@@ -344,7 +347,7 @@ namespace BookTime.Web.Migrations
                             Id = 16,
                             AuthorId = 16,
                             Description = "A historical fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/beloved.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/beloved.jpg",
                             NumPages = 320,
                             Title = "Beloved"
                         },
@@ -353,7 +356,7 @@ namespace BookTime.Web.Migrations
                             Id = 17,
                             AuthorId = 17,
                             Description = "A science fiction novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/kindred.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/kindred.jpg",
                             NumPages = 256,
                             Title = "Kindred"
                         },
@@ -362,7 +365,7 @@ namespace BookTime.Web.Migrations
                             Id = 18,
                             AuthorId = 18,
                             Description = "A memoir.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/i-know-why.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/i-know-why.jpg",
                             NumPages = 272,
                             Title = "I Know Why the Caged Bird Sings"
                         },
@@ -371,7 +374,7 @@ namespace BookTime.Web.Migrations
                             Id = 19,
                             AuthorId = 19,
                             Description = "A fantasy novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/american-gods.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/american-gods.jpg",
                             NumPages = 466,
                             Title = "American Gods"
                         },
@@ -380,7 +383,7 @@ namespace BookTime.Web.Migrations
                             Id = 20,
                             AuthorId = 20,
                             Description = "A fantasy novel.",
-                            Image = "https://raw.githubusercontent.com/Rafaelse6/books-data/main/discworld.jpg",
+                            Image = "https://github.com/Rafaelse6/books-data/blob/main/discworld.jpg",
                             NumPages = 384,
                             Title = "Discworld"
                         });

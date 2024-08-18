@@ -1,4 +1,4 @@
 ﻿namespace BookTime.Shared.DTOs
 {
-    public record BookListDTO(int Id, string TItle, string Image, AuthorDTO Author);
+    public record BookListDTO(int Id, string Title, string Image, AuthorDTO Author);
 }

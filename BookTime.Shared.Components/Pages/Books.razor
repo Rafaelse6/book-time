@@ -9,7 +9,27 @@
 </SectionContent>
 
 <div class="container-lg">
-    <h4>Books listing will go here</h4>
+    <div class="row">
+        <div class="col md-9">
+            <div class="row">
+                <div class="row">
+                    @foreach (var b in _books)
+                    {
+                        <div class="col-sm-6 col-lg-3">
+                            <a href="/books/@b.Id" title="@b.Title">
+                                <figure bg-main-light>
+                                    <img src="@b.Image" alt="@b.Title" style="width: 248px; height: 445px;" />
+                                </figure>
+                                <div class="p-2">
+                                    <h6>@b.Title</h6>
+                                </div>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 @code {
@@ -28,7 +48,7 @@
     {
         _genres = await BookService.GetReadAsync(wasRead: true);
         var booksResult = await BookService.GetBooksAsync(PageNo ?? 1, PageSize);
-        _books = booksResult.Records;  
+        _books = booksResult.Records;
         _totalCount = booksResult.TotalCount;
     }
 }
