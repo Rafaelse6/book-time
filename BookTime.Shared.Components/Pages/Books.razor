@@ -1,0 +1,34 @@
+﻿@page "/"
+@page "/page/{pageNo:int?}"
+@inject IBookService BookService;
+
+<PageTitle>Home | BookTime</PageTitle>
+
+<SectionContent SectionName="PageTitle">
+    <h1 class="m-0 text-white fw-bold">BookTime</h1>
+</SectionContent>
+
+<div class="container-lg">
+    <h4>Books listing will go here</h4>
+</div>
+
+@code {
+
+    [Parameter]
+    public int? PageNo { get; set; } = 1;
+
+    private GenreDTO[] _genres = [];
+    private BookListDTO[] _books = [];
+    private int _totalCount = 0;
+
+    private const int PageSize = 16;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        _genres = await BookService.GetReadAsync(wasRead: true);
+        var booksResult = await BookService.GetBooksAsync(PageNo ?? 1, PageSize);
+        _books = booksResult.Records;  
+        _totalCount = booksResult.TotalCount;
+    }
+}

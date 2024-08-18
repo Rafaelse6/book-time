@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTime.Shared", "BookTime
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookTime.Shared.Components", "BookTime.Shared.Components\BookTime.Shared.Components.csproj", "{00AFC9F5-AD85-4188-B371-E3D45C2D8A53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{F3DD9230-F576-4A15-8E26-6AA75F6E96F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test", "Test\Test.csproj", "{F3DD9230-F576-4A15-8E26-6AA75F6E96F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
