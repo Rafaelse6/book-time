@@ -15,13 +15,13 @@
                 <div class="row">
                     @foreach (var b in _books)
                     {
-                        <div class="col-sm-6 col-lg-3">
+                        <div class="book-block col-sm-6 col-lg-3">
                             <a href="/books/@b.Id" title="@b.Title">
-                                <figure bg-main-light>
+                                <figure class="image-box" bg-main-light>
                                     <img src="@b.Image" alt="@b.Title" style="width: 248px; height: 445px;" />
                                 </figure>
                                 <div class="p-2">
-                                    <h6 class="book-title">@b.Title</h6>
+                                    <h6 class="text-main heading text-center book-title">@b.Title</h6>
                                 </div>
                             </a>
                         </div>
