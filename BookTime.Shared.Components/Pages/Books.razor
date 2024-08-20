@@ -21,7 +21,7 @@
                                     <img src="@b.Image" alt="@b.Title" style="width: 248px; height: 445px;" />
                                 </figure>
                                 <div class="p-2">
-                                    <h6>@b.Title</h6>
+                                    <h6 class="book-title">@b.Title</h6>
                                 </div>
                             </a>
                         </div>
@@ -46,7 +46,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _genres = await BookService.GetReadAsync(wasRead: true);
+        _genres = await BookService.GetReadAsync(wasRead: false);
         var booksResult = await BookService.GetBooksAsync(PageNo ?? 1, PageSize);
         _books = booksResult.Records;
         _totalCount = booksResult.TotalCount;

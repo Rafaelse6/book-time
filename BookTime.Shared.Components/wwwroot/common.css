@@ -6,6 +6,10 @@
     --color-light-black: #3C3C3C; /* Cinza Escuro */
 }
 
+a {
+    text-decoration: none !important;
+}
+
 html, body, * {
     font-family: "Poppins", sans-serif;
 }
