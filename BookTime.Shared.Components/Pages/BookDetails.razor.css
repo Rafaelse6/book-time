@@ -1,0 +1,72 @@
+/* Main container styling */
+.container {
+    background-color: var(--color-very-light-gray);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    max-height: 445px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Book details table */
+.table {
+    border-radius: 8px;
+    background-color: var(--color-main-light);
+}
+
+    .table th {
+        background-color: var(--color-main-dark);
+        color: #fff;
+    }
+
+    .table td {
+        color: var(--color-light-black);
+    }
+
+/* Book title styling */
+h2.fw-bold {
+    font-size: 2rem;
+    color: var(--color-main-dark);
+    background: linear-gradient(90deg, #4DAE73, #1F5B3A);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Author link styling */
+a.text-secondary.fw-bold {
+    color: var(--color-main);
+}
+
+    a.text-secondary.fw-bold:hover {
+        color: var(--color-main-dark);
+    }
+
+/* Genre tags */
+.genre-tag {
+    background-color: var(--color-main-light);
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+    .genre-tag:hover {
+        background-color: var(--color-main-dark);
+        color: #fff;
+    }
+
+/* Section divider */
+hr.text-main {
+    border: none;
+    height: 2px;
+    background-color: var(--color-main);
+}
